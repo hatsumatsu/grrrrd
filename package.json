@@ -1,0 +1,15 @@
+{
+    "name" : "grrrrd",
+    "version" : "0.1.0",
+    "author" : "HATSUMATSU",
+    "private" : true,
+
+    "devDependencies" : {
+        "grunt" :                   "~0.4.0",
+        "grunt-contrib-watch" : 	"*",
+        "grunt-contrib-less" : 		"*",
+        "grunt-contrib-cssmin" :    "*",
+        "grunt-autoprefixer" :      "*",
+        "matchdep" :				"*"
+    } 
+}

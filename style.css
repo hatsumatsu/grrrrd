@@ -1,0 +1,64 @@
+body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12 {
+  padding: 1em 0;
+  font-size: 0.66em;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  -webkit-box-shadow: 0 0 1px 1px red inset;
+  box-shadow: 0 0 1px 1px red inset;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+.grid-1:hover,
+.grid-2:hover,
+.grid-3:hover,
+.grid-4:hover,
+.grid-5:hover,
+.grid-6:hover,
+.grid-7:hover,
+.grid-8:hover,
+.grid-9:hover,
+.grid-10:hover,
+.grid-11:hover,
+.grid-12:hover {
+  color: #fff;
+  background: red;
+}
+.grid-smaller > div {
+  height: 5.2em;
+}
+.grid-container {
+  background: none !important;
+}
+h1 {
+  margin: 2.6em auto;
+  font-size: 4em;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-align: center;
+}
+h2 {
+  margin: 1.3em 0;
+  float: left;
+  clear: left;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+}

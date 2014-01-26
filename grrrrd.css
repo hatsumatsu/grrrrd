@@ -1,0 +1,182 @@
+/*
+
+  - - - - - - - - - - - - - - - - - - - - -
+                                   #
+                                   # 
+    ###    ###  ###  ###  ###   ####  
+   #   #   #    #    #    #    #   #  
+   #   #   #    #    #    #    #   #  
+    ####   #    #    #    #     ###   
+   #   #   
+    ###
+
+  - - - - - - - - - - - - - - - - - - - - - 
+  F L U I D   C S S   G R I D   S Y S T E M
+  - - - - - - - - - - - - - - - - - - - - -
+  
+  Version 0.4
+  HATSUMATSU 2014
+
+  - - - - - - - - - - - - - - - - - - - - -
+
+  hatsumatsu.de
+  
+  - - - - - - - - - - - - - - - - - - - - -
+
+*/
+.grid-container {
+  clear: left;
+  width: 98%;
+  max-width: 64em;
+  margin: 0 auto;
+  padding: 0 0 0 1.66%;
+}
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12 {
+  clear: left;
+  display: block;
+  width: auto;
+  margin: 0 1.66% 1.66% 0;
+}
+[class*="grid-smaller-"] {
+  float: left;
+  clear: none;
+}
+.grid-smaller-1 {
+  width: 23.340000000000003%;
+}
+.grid-smaller-2 {
+  width: 48.34%;
+}
+.grid-smaller-3 {
+  width: 73.34%;
+}
+.grid-smaller-4 {
+  width: 98.34%;
+}
+.indent-smaller-1 {
+  margin-left: 25.000000000000004%;
+}
+.indent-smaller-2 {
+  margin-left: 50.00000000000001%;
+}
+.indent-smaller-3 {
+  margin-left: 75%;
+}
+@media screen and (max-width: 48em) {
+  .hide-smaller {
+    display: none;
+  }
+}
+@media screen and (min-width: 48em) {
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5,
+  .grid-6,
+  .grid-7,
+  .grid-8,
+  .grid-9,
+  .grid-10,
+  .grid-11,
+  .grid-12 {
+    float: left;
+    clear: none;
+    margin: 0 1.66% 1.66% 0;
+  }
+  .grid-1 {
+    width: 6.673333333333334%;
+  }
+  .grid-2 {
+    width: 15.006666666666668%;
+  }
+  .grid-3 {
+    width: 23.340000000000003%;
+  }
+  .grid-4 {
+    width: 31.673333333333336%;
+  }
+  .grid-5 {
+    width: 40.00666666666667%;
+  }
+  .grid-6 {
+    width: 48.34%;
+  }
+  .grid-7 {
+    width: 56.67333333333334%;
+  }
+  .grid-8 {
+    width: 65.00666666666667%;
+  }
+  .grid-9 {
+    width: 73.34%;
+  }
+  .grid-10 {
+    width: 81.67333333333333%;
+  }
+  .grid-11 {
+    width: 90.00666666666666%;
+  }
+  .grid-12 {
+    width: 98.34%;
+  }
+  [class*="indent-smaller-"] {
+    margin-left: 0;
+  }
+  .indent-1 {
+    margin-left: 8.333333333333334%;
+  }
+  .indent-2 {
+    margin-left: 16.666666666666668%;
+  }
+  .indent-3 {
+    margin-left: 25.000000000000004%;
+  }
+  .indent-4 {
+    margin-left: 33.333333333333336%;
+  }
+  .indent-5 {
+    margin-left: 41.666666666666664%;
+  }
+  .indent-6 {
+    margin-left: 50.00000000000001%;
+  }
+  .indent-7 {
+    margin-left: 58.333333333333336%;
+  }
+  .indent-8 {
+    margin-left: 66.66666666666667%;
+  }
+  .indent-9 {
+    margin-left: 75%;
+  }
+  .indent-10 {
+    margin-left: 83.33333333333333%;
+  }
+  .indent-11 {
+    margin-left: 91.66666666666666%;
+  }
+  .grid-start {
+    clear: left;
+  }
+}
+/* end min-width */
+@media screen and (min-width: 48em) {
+  .hide-larger {
+    display: none;
+  }
+  .hide-smaller {
+    display: block;
+  }
+}
