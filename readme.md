@@ -11,6 +11,7 @@ On screen widths smaller than `@breakpoint-fluid-lower` the grid linearizes and 
 
 ### Widths
 `grid-container` – centered container element.
+
 `grid-1` ... `grid-12` – element widths based on the grid.
 
 ### Indentation
@@ -21,13 +22,16 @@ On screen widths smaller than `@breakpoint-fluid-lower` the grid linearizes and 
 
 ### Visibility
 `hide-smaller` – hide elements on screen widths smaller than `@breakpoint-fluid-lower`.
+
 `hide-larger` – hide elements on screen widths greater than `@breakpoint-fluid-lower`. 
 
 ### Smaller grid
 By default all grid items become full-widths on screen widths smaller than `@breakpoint-fluid-lower`, except you use the following classes that enable a smaller 4-column grid:
+
 `grid-smaller-1` ... `grid-smaller-4` – element widths.
+
 `indent-smaller-1` ... `indent-smaller-3` – indentation. 
 
 ### Demo 
-[Default configuration]()
+[Default configuration](https://rawgithub.com/hatsumatsu/grrrrd/master/demo/index.html)
 
