@@ -32,7 +32,7 @@ module.exports = function(grunt){
 
     });
 
-    grunt.registerTask('default', []);
+    grunt.registerTask('default', ['build']);
 	grunt.registerTask('buildcss', ['less','autoprefixer']);
 	grunt.registerTask('build', ['buildcss']);
 };

@@ -8,7 +8,6 @@
         "grunt" :                   "~0.4.0",
         "grunt-contrib-watch" : 	"*",
         "grunt-contrib-less" : 		"*",
-        "grunt-contrib-cssmin" :    "*",
         "grunt-autoprefixer" :      "*",
         "matchdep" :				"*"
     } 

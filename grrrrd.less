@@ -105,6 +105,10 @@
 .indent-smaller-3 {
   .indent( 9 );
 }
+
+.grid-smaller-start {
+  clear: left;
+}
   
 
 @media screen and ( max-width: @breakpoint-fluid-lower ) {
@@ -114,10 +118,6 @@
 }
 
 @media screen and ( min-width: @breakpoint-fluid-lower ) {
-
-  .grid-container {
-
-  }
 
   .grid-1,
   .grid-2,
@@ -210,6 +210,10 @@
   }
   .indent-11 {
   .indent(11);
+  }
+
+  .grid-smaller-start {
+    clear: none;
   }
 
   .grid-start {

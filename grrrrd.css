@@ -73,6 +73,9 @@
 .indent-smaller-3 {
   margin-left: 75%;
 }
+.grid-smaller-start {
+  clear: left;
+}
 @media screen and (max-width: 48em) {
   .hide-smaller {
     display: none;
@@ -166,6 +169,9 @@
   }
   .indent-11 {
     margin-left: 91.66666666666666%;
+  }
+  .grid-smaller-start {
+    clear: none;
   }
   .grid-start {
     clear: left;
