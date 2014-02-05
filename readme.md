@@ -32,6 +32,7 @@ By default all grid items become full-widths on screen widths smaller than `@bre
 
 `indent-smaller-1` ... `indent-smaller-3` – indentation. 
 
+`grid-smaller-start` – start new row.
 ### Demo 
 [Default configuration](http://rawgithub.com/hatsumatsu/grrrrd/master/demo/index.html)
 
