@@ -3,7 +3,7 @@
 
 Grrrrd is a partly fluid CSS grid system based on [LESS](http://lesscss.org/). 
 
-Between `@breakpoint-fluid-lower` (default: 48em) and `@breakpoint-fluid-upper` (default: 64em) you get a fluid 12-column grid with a container width of 98% and a maximum width of `@breakpoint-fluid-upper`.
+Between `@breakpoint-fluid-lower` (default: 48em) and `@breakpoint-fluid-upper` (default: 64em) you get a fluid 12-column grid with a maximum total width of `@breakpoint-fluid-upper`.
 
 `@gutter` (% of container width, default 1.66%) defines the margin between grid elements.
 

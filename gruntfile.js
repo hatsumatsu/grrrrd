@@ -9,14 +9,14 @@ module.exports = function(grunt){
 		  development: {
 		    files: {
 		      "grrrrd.css": "grrrrd.less",
-		      "style.css": "style.less",
+		      "demo/style.css": "demo/style.less",
 		    }
 		  }
 		},
 
 		autoprefixer: {
 			styles: {
-				src: "*.css"
+				src: ["*.css","demo/*.css"]
 			},
 			options: {
 				browsers: "> 1%"
@@ -25,7 +25,7 @@ module.exports = function(grunt){
 
 		watch: {
 		    css: {
-		        files: ['*.less'],
+		        files: ['**/*.less'],
 		        tasks: ['buildcss']
 		    }
 		}
