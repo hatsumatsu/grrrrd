@@ -1,5 +1,4 @@
 /*
-
   - - - - - - - - - - - - - - - - - - - - -
                                    #
                                    # 
@@ -14,7 +13,7 @@
   F L U I D   C S S   G R I D   S Y S T E M
   - - - - - - - - - - - - - - - - - - - - -
   
-  Version 0.4
+  Version 0.5
   HATSUMATSU 2014
 
   - - - - - - - - - - - - - - - - - - - - -
@@ -22,37 +21,35 @@
   hatsumatsu.de
   
   - - - - - - - - - - - - - - - - - - - - -
-
 */
 
 // CONFIG
+@breakpoint-fluid-upper: 72em;
+@breakpoint-fluid-lower: 48em;
 
-@breakpoint-fluid-upper: 70em; // = 1024 px
-@breakpoint-fluid-lower: 48em; // = 768px
+@gutter: 1.5%;
 
-@gutter: 1.66%;
 
 // MIXINS
-
 @col: ( 100% / 12 ) - @gutter; 
 
-.col( @w, @containsgrid: false ) {
+.col( @w ) {
   width: ( @col * @w ) + ( @gutter * ( @w - 1 ) );
 }
 
 .indent( @i ) {
-  margin-left: ( @col * @i ) + ( @gutter * @i );
+  margin-left: ( @col * @i ) + ( @gutter * @i ) + ( @gutter / 2 );
 }
 
-// 
 
+// SMALL GRID
 .grid-container {
   clear: left;
-  width: ( 100% - @gutter );
+  width: auto;
   max-width: @breakpoint-fluid-upper;
 
   margin: 0 auto;
-  padding: 0 0 0 @gutter;
+  padding: 0;
 }
 
 .grid-1,
@@ -70,10 +67,10 @@
   clear: left;
   display: block;
   width: auto;
-  margin: 0 @gutter @gutter 0;
+  margin: 0 ( @gutter / 2 ) @gutter;
 }
   
-[class*="grid-smaller-"] {
+[class*='grid-smaller-'] {
   float: left;
   clear: none;
 }
@@ -109,15 +106,17 @@
 .grid-smaller-start {
   clear: left;
 }
-  
 
-@media screen and ( max-width: @breakpoint-fluid-lower ) {
-  .hide-smaller {
-    display: none;
-  }
-}
+.hide-smaller {
+  display: none;
+}  
 
+
+// LARGER GRID
 @media screen and ( min-width: @breakpoint-fluid-lower ) {
+  .indent( @i ) {
+    margin-left: ( @col * @i ) + ( @gutter * @i );
+  }
 
   .grid-1,
   .grid-2,
@@ -133,7 +132,7 @@
   .grid-12 {
     float: left;
     clear: none;
-    margin: 0 @gutter @gutter 0;
+    margin: 0 ( @gutter / 2 ) @gutter;
   }
 
   .grid-1 {
@@ -173,43 +172,38 @@
     .col( 12 );
   }
 
-
-  [class*="indent-smaller-"] {
-    margin-left: 0;
-  }
-
   .indent-1 {
-  .indent(1);
+    .indent( 1 );
   }
   .indent-2 {
-  .indent(2);
+    .indent( 2 );
   }
   .indent-3 {
-  .indent(3);
+    .indent( 3 );
   }
   .indent-4 {
-  .indent(4);
+    .indent( 4 );
   }
   .indent-5 {
-  .indent(5);
+    .indent( 5 );
   }
   .indent-6 {
-  .indent(6);
+    .indent( 6 );
   }
   .indent-7 {
-  .indent(7);
+    .indent( 7 );
   }
   .indent-8 {
-  .indent(8);
+    .indent( 8 );
   }
   .indent-9 {
-  .indent(9);
+    .indent( 9 );
   }
   .indent-10 {
-  .indent(10);
+    .indent( 10 );
   }
   .indent-11 {
-  .indent(11);
+    .indent( 11 );
   }
 
   .grid-smaller-start {
@@ -220,9 +214,6 @@
     clear: left;
   }
 
-} /* end min-width */
-
-@media screen and ( min-width: @breakpoint-fluid-lower ) {
   .hide-larger {
     display: none;
   }

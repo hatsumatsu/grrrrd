@@ -1,5 +1,4 @@
 /*
-
   - - - - - - - - - - - - - - - - - - - - -
                                    #
                                    # 
@@ -14,7 +13,7 @@
   F L U I D   C S S   G R I D   S Y S T E M
   - - - - - - - - - - - - - - - - - - - - -
   
-  Version 0.4
+  Version 0.5
   HATSUMATSU 2014
 
   - - - - - - - - - - - - - - - - - - - - -
@@ -22,14 +21,13 @@
   hatsumatsu.de
   
   - - - - - - - - - - - - - - - - - - - - -
-
 */
 .grid-container {
   clear: left;
-  width: 98.34%;
-  max-width: 64em;
+  width: auto;
+  max-width: 72em;
   margin: 0 auto;
-  padding: 0 0 0 1.66%;
+  padding: 0;
 }
 .grid-1,
 .grid-2,
@@ -46,40 +44,38 @@
   clear: left;
   display: block;
   width: auto;
-  margin: 0 1.66% 1.66% 0;
+  margin: 0 0.75% 1.5%;
 }
-[class*="grid-smaller-"] {
+[class*='grid-smaller-'] {
   float: left;
   clear: none;
 }
 .grid-smaller-1 {
-  width: 23.340000000000003%;
+  width: 23.5%;
 }
 .grid-smaller-2 {
-  width: 48.34%;
+  width: 48.5%;
 }
 .grid-smaller-3 {
-  width: 73.34%;
+  width: 73.5%;
 }
 .grid-smaller-4 {
-  width: 98.34%;
+  width: 98.5%;
 }
 .indent-smaller-1 {
-  margin-left: 25.000000000000004%;
+  margin-left: 25.75%;
 }
 .indent-smaller-2 {
-  margin-left: 50.00000000000001%;
+  margin-left: 50.75%;
 }
 .indent-smaller-3 {
-  margin-left: 75%;
+  margin-left: 75.75%;
 }
 .grid-smaller-start {
   clear: left;
 }
-@media screen and (max-width: 48em) {
-  .hide-smaller {
-    display: none;
-  }
+.hide-smaller {
+  display: none;
 }
 @media screen and (min-width: 48em) {
   .grid-1,
@@ -96,46 +92,43 @@
   .grid-12 {
     float: left;
     clear: none;
-    margin: 0 1.66% 1.66% 0;
+    margin: 0 0.75% 1.5%;
   }
   .grid-1 {
-    width: 6.673333333333334%;
+    width: 6.833333333333334%;
   }
   .grid-2 {
-    width: 15.006666666666668%;
+    width: 15.166666666666668%;
   }
   .grid-3 {
-    width: 23.340000000000003%;
+    width: 23.5%;
   }
   .grid-4 {
-    width: 31.673333333333336%;
+    width: 31.833333333333336%;
   }
   .grid-5 {
-    width: 40.00666666666667%;
+    width: 40.16666666666667%;
   }
   .grid-6 {
-    width: 48.34%;
+    width: 48.5%;
   }
   .grid-7 {
-    width: 56.67333333333334%;
+    width: 56.833333333333336%;
   }
   .grid-8 {
-    width: 65.00666666666667%;
+    width: 65.16666666666667%;
   }
   .grid-9 {
-    width: 73.34%;
+    width: 73.5%;
   }
   .grid-10 {
-    width: 81.67333333333333%;
+    width: 81.83333333333334%;
   }
   .grid-11 {
-    width: 90.00666666666666%;
+    width: 90.16666666666667%;
   }
   .grid-12 {
-    width: 98.34%;
-  }
-  [class*="indent-smaller-"] {
-    margin-left: 0;
+    width: 98.5%;
   }
   .indent-1 {
     margin-left: 8.333333333333334%;
@@ -144,16 +137,16 @@
     margin-left: 16.666666666666668%;
   }
   .indent-3 {
-    margin-left: 25.000000000000004%;
+    margin-left: 25%;
   }
   .indent-4 {
     margin-left: 33.333333333333336%;
   }
   .indent-5 {
-    margin-left: 41.666666666666664%;
+    margin-left: 41.66666666666667%;
   }
   .indent-6 {
-    margin-left: 50.00000000000001%;
+    margin-left: 50%;
   }
   .indent-7 {
     margin-left: 58.333333333333336%;
@@ -165,10 +158,10 @@
     margin-left: 75%;
   }
   .indent-10 {
-    margin-left: 83.33333333333333%;
+    margin-left: 83.33333333333334%;
   }
   .indent-11 {
-    margin-left: 91.66666666666666%;
+    margin-left: 91.66666666666667%;
   }
   .grid-smaller-start {
     clear: none;
@@ -176,9 +169,6 @@
   .grid-start {
     clear: left;
   }
-}
-/* end min-width */
-@media screen and (min-width: 48em) {
   .hide-larger {
     display: none;
   }
